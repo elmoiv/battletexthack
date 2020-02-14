@@ -6,6 +6,9 @@
 
 
 <p align="center">An ultimate word finder for Battle Text IOS/Android Game</p>
+<p align="center">
+  <img src="https://github.com/elmoiv/battletexthack/blob/master/example.PNG?raw=true">
+</p>
 
 ## Usage
 ```bash
@@ -15,6 +18,7 @@
 ```python
 >> [Starting Letter][Ending Letter](Optional) [Length] [Characters_to_exclude]
 ```
+
 ### Search
 
   - Show words starting with `A`:
