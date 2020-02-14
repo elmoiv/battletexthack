@@ -28,7 +28,7 @@ def hacker(command, size = 20):
         if c[2]:
             skipped_letters = c[2]
 
-    word_list = list(get_words(letter, skipped_letters, length))
+    word_list = list(get_words(letter.lower(), skipped_letters.lower(), length))
     
     if not word_list:
         print('Nothing found')
