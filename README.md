@@ -16,7 +16,7 @@
 ```
 ## Command Format
 ```python
->> [Starting Letter][Ending Letter](Optional) [Length] [Characters_to_exclude]
+>> [Starting_Letter][Ending_Letter (Optional)] [Length] [Characters_to_exclude]
 ```
 
 ### Search
