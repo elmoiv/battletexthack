@@ -7,7 +7,7 @@
 
 <p align="center">An ultimate word finder for Battle Text IOS/Android Game</p>
 <p align="center">
-  <img src="https://github.com/elmoiv/battletexthack/blob/master/example.PNG?raw=true">
+  <img src="https://github.com/elmoiv/battletexthack/blob/master/example.png?raw=true">
 </p>
 
 ## Usage
