@@ -37,7 +37,7 @@
 ```python
 >> a ie
 ```
-#### Change shown word count:
+#### Change shown words count:
 ```python
 >> size N       # Where N is integer > 0
 ```
