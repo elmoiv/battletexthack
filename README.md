@@ -6,3 +6,38 @@
 
 
 <p align="center">An ultimate word finder for Battle Text IOS/Android Game</p>
+
+## Usage
+```bash
+./main.py
+```
+## Command Format
+```python
+>> [Starting Letter][Ending Letter](Optional) [Length] [Characters to exclude]
+```
+### Search
+
+  - Show words starting with `A`:
+```python
+>> a
+```
+  - Show words starting with `A` and ending with `Y`:
+```python
+>> ay
+```
+  - Show words starting with `A` with length <= 10:
+```python
+>> a 10
+```
+  - Show words starting with `A` excluding any with `I` and `E`:
+```python
+>> a ie
+```
+#### Change shown word count:
+```python
+>> size N       # Where N is integer > 0
+```
+#### Exit:
+```python
+>> exit
+```
