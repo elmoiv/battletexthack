@@ -37,7 +37,8 @@
       * Default mode.
       * Blocked letters mode.
   - I will add ending letter mode soon.
-  
+## Limitations
+- If you moved the emulator window one pixel in any direction, everything will get messed up 🤷‍♀️
 ## Requirements
   ```
 pyautogui
