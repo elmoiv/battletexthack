@@ -4,6 +4,10 @@
   <img width="200" height="200" src="https://github.com/elmoiv/battletexthack/blob/master/assests/icon.png">
 </p>
 
+## Disclaimer
+```diff
+- This project is intended for educational purposes only, and should not be substituted for unfair play -
+```
 ## Usage
 ```bash
 ./battletext.py
@@ -23,7 +27,8 @@
 <p align="center">
   <img src="https://github.com/elmoiv/battletexthack/blob/master/assests/example%202.png">
 </p>
-<p align="center">You should click like illustrated not in the exact middle-point</p>
+
+**<p align="center">You should click like illustrated not in the exact middle-point</p>**
 
   - **Now your gameplay will be all automated till the end.**
   
