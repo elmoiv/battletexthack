@@ -118,7 +118,10 @@ def main():
         
         # Get corresponding words and shuffling them
         words = list(get_words(letter, skipped, 30))
+        
+        # You can remove this line but you will be suspicious :|
         random.shuffle(words)
+        
         print(f'-Found {len(words)} words')
         
         # Auto-Type the word and click done
