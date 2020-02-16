@@ -65,14 +65,6 @@ def get_keyboard(f=1):
     
     return keys
 
-# Checks for current color in accuracy range
-def accuracy(current, expected):
-    for i in range(3):
-        e = expected[i]
-        if not (e - 3 < current[i] < e + 3):
-            return False
-    return True
-
 def get_current_colors(keys):
     # return active green key
     # and disabled grey keys
@@ -146,7 +138,9 @@ def main():
         rounds += 1
 
 if __name__ == '__main__':
-    #main()
+    main()
+    
+    '''# For testing
     capture_click()
     time.sleep(1)
     print('- Captured Click')
@@ -156,4 +150,4 @@ if __name__ == '__main__':
     print(get_current_colors(keys))
     print('- Mapped Keys')
     for key in keys:
-        pg.click(keys[key])
+        pg.click(keys[key])'''
