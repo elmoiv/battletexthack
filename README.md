@@ -25,4 +25,21 @@
 </p>
 <p align="center">You should click like illustrated not in the exact middle-point</p>
 
- 
+  - **Now your gameplay will be all automated till the end.**
+  
+## Problems:
+  - Script can be used in 2 modes till now:
+      * Default mode.
+      * Blocked letters mode.
+  - I will add ending letter mode soon.
+  
+## Requirements
+  ```
+pyautogui
+PIL
+pynput
+  ```
+## Contributing
+Please contribute! If you want to fix a bug, suggest improvements, or add new features to the project, just [open an issue](https://github.com/elmoiv/battletext/issues) or send me a pull request.
+
+### If you really love the game, you should play clean 🙂
