@@ -4,12 +4,6 @@
   <img width="200" height="200" src="https://lh3.googleusercontent.com/ZrrkvK_GvQ1-YAfU9htQNPh5n8Zh5sL2DQHSuGy9PaoBJ-HCoX1Cfvr0j5C9MKqtKN4">
 </p>
 
-
-<p align="center">An ultimate word finder for Battle Text IOS/Android Game</p>
-<p align="center">
-  <img src="https://github.com/elmoiv/battletexthack/blob/master/example.png?raw=true">
-</p>
-
 ## Usage
 ```bash
 ./main.py
