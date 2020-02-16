@@ -14,4 +14,15 @@
   - **Download [BattleText](https://play.google.com/store/apps/details?id=com.randomlogicgames.battletext&hl=en) from Googleplay.**
   - **Launch the game and wait till your first round starts like illustrated:**
   
-  ![Correct way to the left](https://github.com/elmoiv/battletexthack/blob/master/assests/example.png)
+<p align="center">
+  <img src="https://github.com/elmoiv/battletexthack/blob/master/assests/example.png">
+</p>
+
+  - **Run `battletext.py` and immediately click on backspace on-screen button:**
+
+<p align="center">
+  <img src="https://github.com/elmoiv/battletexthack/blob/master/assests/example%202.png">
+</p>
+<p align="center">You should click like illustrated not in the exact middle-point</p>
+
+ 
