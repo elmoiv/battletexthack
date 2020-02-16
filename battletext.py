@@ -1,11 +1,11 @@
 import pyautogui as pg
 import PIL.ImageGrab
 import pynput
-import time
-import random
+import random, os, time
 
 listener = None
 current_position = None
+os.chdir('words')
 
 def get_words(letter, skipped, length):
     # Get list from json file with starting letter
