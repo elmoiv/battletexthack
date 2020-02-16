@@ -6,36 +6,10 @@
 
 ## Usage
 ```bash
-./main.py
+./battletext.py
 ```
-## Command Format
-```python
->> [Starting_Letter][Ending_Letter (Optional)] [Length] [Characters_to_exclude]
-```
-
-### Search
-
-  - Show words starting with `A`:
-```python
->> a
-```
-  - Show words starting with `A` and ending with `Y`:
-```python
->> ay
-```
-  - Show words starting with `A` with length <= 10:
-```python
->> a 10
-```
-  - Show words starting with `A` excluding any with `I` and `E`:
-```python
->> a ie
-```
-#### Change shown words count:
-```python
->> size N       # Where N is integer > 0
-```
-#### Exit:
-```python
->> exit
-```
+## How to
+  - **Download any android emulator ([LD Player](https://encdn.ldmnq.com/download/en/LDPlayer_ens_3020_ld.exe) is good).**
+  - **This scripts runs in 1920x1080 emulator settings for an accurate guess.**
+  - **Download [BattleText](https://play.google.com/store/apps/details?id=com.randomlogicgames.battletext&hl=en) from Googleplay.**
+  - **Launch the game and wait till your first round starts
