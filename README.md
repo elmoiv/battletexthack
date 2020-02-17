@@ -1,4 +1,4 @@
-**<p align="center">Battle Text hack</p>**
+**<p align="center">BattleText Hack</p>**
 
 <p align="center">
   <img width="200" height="200" src="https://github.com/elmoiv/battletexthack/blob/master/assests/icon.png">
