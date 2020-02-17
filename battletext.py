@@ -26,12 +26,21 @@ def get_words(letter, skipped, length):
                 if all(l not in word for l in skipped):
                     yield word
 
+def smart_randomizer(words:list, randomized=True):
+    # Toggle between human like typing and auto-robot
+    new_list = words[:10] + words[20:30]
+    random.shuffle(new_list)
+    if not randomized:
+        new_list = words
+    return new_list[5]
+
 def on_click(x, y, button, pressed):
     global current_position
     # If mouse clicked store position and stop listener
     if pressed:
         current_position = (x, y)
         listener.stop()
+        time.sleep(1)
 
 def capture_click():
     global listener
@@ -81,14 +90,21 @@ def get_current_colors(keys):
             GRY += key
     return GRN, GRY
 
-def auto_typer(keys, word, delay=0.1):
-    for letter in word:
-        pg.click(keys[letter])
-        time.sleep(delay)
+def auto_typer(keys, word, delay=0.09, human_like=False):
+    # Using some randomness to simulate a human typing
+    if human_like:
+        time.sleep(random.randint(1, 3))
+        for letter in word:
+            pg.click(keys[letter])
+            time.sleep(random.randint(1, 4) * delay)
+    else:
+        for letter in word:
+            pg.click(keys[letter])
     
     pg.click(keys['done'])
 
 def wait_other_player(keys):
+    time.sleep(2)
     x, y = keys['done']
     while True:
         done_color = PIL.ImageGrab.grab().load()[x, y]
@@ -99,9 +115,18 @@ def wait_other_player(keys):
         time.sleep(1)
 
 def main():
+    isHuman = input('Enter 0 for Robot or 1 for Human: ')
+    try:
+        isHuman = int(isHuman)
+        if not -1 < isHuman < 2:
+            isHuman = 1
+    except:
+        isHuman = 1
+
+    print('Click above backspace middle-point:\n')
+
     # Capture click on on-screen del button
     capture_click()
-    time.sleep(1)
     print('- Captured Click')
 
     # Map the rest of the keys
@@ -114,28 +139,24 @@ def main():
 
         # Get active letter and skipped ones from screen
         letter, skipped = get_current_colors(keys)
-        print(f'\n-Active Letter: {letter}\n-Skipped Letters: {skipped}\n')
+        print(f'\n- Active Letter: {letter}'
+              f'\n- Skipped Letters: {skipped}\n')
         
         # Get corresponding words and shuffling them
         words = list(get_words(letter, skipped, 30))
-        
-        # You can remove this line but you will be suspicious :|
-        random.shuffle(words)
-        
-        print(f'-Found {len(words)} words')
+        print(f'- Found {len(words)} words')
         
         # Auto-Type the word and click done
-        word = words[0]
-        print(f'-Auto-typing word: {word}')
-        auto_typer(keys, words[0])
+        word = smart_randomizer(words, randomized=isHuman)        # word = words[0]
+        print(f'- Auto-typing word: {word}')
+        auto_typer(keys, word, human_like=isHuman)
 
         # Wait for next round or win screen
-        print('-Waiting for next round...')
-        time.sleep(2)
+        print('- Waiting for next round...')
         waiter = wait_other_player(keys)
         
         if waiter:
-            print('-Opponent has been defeated XD')
+            print('- Opponent has been defeated XD')
             return
         
         rounds += 1
