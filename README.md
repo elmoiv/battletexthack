@@ -9,8 +9,8 @@
 - This project is intended for educational purposes only, and should not be substituted for unfair play -
 ```
 ## Usage
-```bash
-./battletext.py
+```batch
+python battletext.py
 ```
 ## How to
   - **Download any android emulator ([LD Player](https://encdn.ldmnq.com/download/en/LDPlayer_ens_3020_ld.exe) is good).**
