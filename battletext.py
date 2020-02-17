@@ -142,15 +142,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
-    '''# For testing
-    capture_click()
-    time.sleep(1)
-    print('- Captured Click')
-
-    # Map the rest of the keys
-    keys = get_keyboard()
-    print(get_current_colors(keys))
-    print('- Mapped Keys')
-    for key in keys:
-        pg.click(keys[key])'''
