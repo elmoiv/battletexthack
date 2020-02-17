@@ -32,7 +32,7 @@ python battletext.py
 
   - Now your gameplay will be all automated till the end.
   
-## Problems:
+## Problems
   - Script can be used in 2 modes till now:
       * Default mode.
       * Blocked letters mode.
