@@ -14,7 +14,7 @@ python battletext.py
 ```
 ## How to
   - Download any android emulator ([LD Player](https://encdn.ldmnq.com/download/en/LDPlayer_ens_3020_ld.exe) is good).
-  - This scripts runs in `1920x1080` emulator settings in order to work properly.
+  - This scripts runs under `1920x1080` emulator settings in order to work properly.
   - Download [BattleText](https://play.google.com/store/apps/details?id=com.randomlogicgames.battletext&hl=en) from Googleplay.
   - Launch the game and wait till your first round starts like illustrated:
   
