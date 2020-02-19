@@ -5,6 +5,7 @@ import random, os, time
 
 listener = None
 current_position = None
+word_history = []
 os.chdir('words')
 
 def get_words(letter, skipped, length):
@@ -27,12 +28,22 @@ def get_words(letter, skipped, length):
                     yield word
 
 def smart_randomizer(words:list, randomized=True):
+    global word_history
     # Toggle between human like typing and auto-robot
-    new_list = words[:10] + words[20:30]
+    new_list = words[:]
     random.shuffle(new_list)
     if not randomized:
-        new_list = words
-    return new_list[5]
+        new_list = words[:]
+
+    # Never get the same word twice
+    i = 0
+    word = new_list[i]
+    while word in word_history or len(word) > 20:
+        i += 1
+        word = new_list[i]
+    word_history.append(word)
+
+    return word
 
 def on_click(x, y, button, pressed):
     global current_position
