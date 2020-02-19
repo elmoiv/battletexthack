@@ -29,6 +29,7 @@ def get_words(letter, skipped, length):
 
 def smart_randomizer(words:list, randomized=True):
     global word_history
+    
     # Toggle between human like typing and auto-robot
     new_list = words[:]
     random.shuffle(new_list)
@@ -47,6 +48,7 @@ def smart_randomizer(words:list, randomized=True):
 
 def on_click(x, y, button, pressed):
     global current_position
+    
     # If mouse clicked store position and stop listener
     if pressed:
         current_position = (x, y)
